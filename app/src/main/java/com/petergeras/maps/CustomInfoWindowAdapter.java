@@ -60,9 +60,9 @@ public class CustomInfoWindowAdapter implements GoogleMap.InfoWindowAdapter, Goo
     @Override
     public void onInfoWindowClick(Marker marker) {
 
-        // When we
+        // When the user clicks on the InfoWindow, the user is then directed to the WebActivity 
+        // that brings the user to internet. 
         Intent intent = new Intent(mContext, WebActivity.class);
         mContext.startActivity(intent);
-
     }
 }
